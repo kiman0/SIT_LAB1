@@ -31,8 +31,6 @@ class todoController extends Controller
            }
            return $data;
 
-
-
           // return DB::table('tasks')->where('tas_id', '=', Auth::id())->task_id;
        }
        else
@@ -54,5 +52,9 @@ class todoController extends Controller
         $review->save();
         return $review;
         //return view('showProduct', ['product' => $product]);
+    }
+    public function index1()
+    {
+        return view('todo');
     }
 }

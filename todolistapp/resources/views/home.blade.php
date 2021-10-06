@@ -17,9 +17,26 @@
 
                        <a href="/tasks">   <button name="send">Посмотреть задачи</button></a>
                        <form method="post" action="/check">
+
                     @csrf
                             <input type="text" name="subject" id="subject" placeholder="Введите текст такса" class="form-control">
                             <button type="submit" class="btn btn-success">Отправить</button>
+
+                       </form>
+
+                        <form method="post" action="/check">
+
+                            @csrf
+                            <input type="text" name="subject" id="subject" placeholder="Введите номер таска, который нужно удлаить" class="form-control">
+                            <button type="submit" class="btn btn-success">Удалить</button>
+
+                        </form>
+
+                        <form method="post" action="/check">
+
+                            @csrf
+                            <input type="text" name="subject" id="subject" placeholder="Введите номер таска, который нужно удлаить" class="form-control">
+                            <button type="submit" class="btn btn-success">Изменить</button>
 
                         </form>
 
